@@ -64,7 +64,7 @@ app.post('/api/duel', (req, res) => {
             rollbar.warning(`may be awesomely sad`)
             res.status(200).send('You lost!')
         } else {
-            playerRecord.losses++
+            playerRecord.wins++
             rollbar.warning(`may be awesomely happy`)
             res.status(200).send('You won!')
         }
